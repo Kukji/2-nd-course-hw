@@ -1,106 +1,101 @@
+@charset "UTF-8";
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-a{
-    text-decoration: none
+a {
+  text-decoration: none;
 }
 
 .top {
-    height: 1024px;
-    background-image: url(img/top-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 217px;
-    padding-left: 120px;
+  height: 1024px;
+  background-image: url(img/top-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 217px;
+  padding-left: 120px;
 }
-
-.h_text {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 78px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 32px;
-    color: #FFFFFF;
+.top_offer__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+  color: #FFFFFF;
 }
-
-.p_text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 32px;
-    color: #FFFFFF;
-    margin-bottom: 44px;
+.top_offer__description {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-bottom: 44px;
+  width: 481px;
 }
 
 .button_top {
-    background: #9C0332;
-    border-radius: 30px;
-    /*Оформление "поехали" */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    color: #FFFFFF;
-    width: 234.06px;
-    height: 48.6px;
-    padding-left: 74px;
-    padding-right: 74px;
+  background: #9C0332;
+  border-radius: 30px;
+  /*Оформление "поехали" */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  width: 234.06px;
+  height: 48.6px;
+  padding-left: 74px;
+  padding-right: 74px;
 }
 
-.mid {
-    background: #000915;
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    height: 556px;
-    padding-top: 128px;
-    padding-left: 120px;
+.game-list {
+  background: #000915;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  height: 556px;
+  padding-top: 128px;
+  padding-left: 120px;
+  list-style-type: none;
+}
+.game-list__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  width: 379px;
+  height: 300px;
+  color: #FFFFFF;
+  padding-left: 32px;
+  padding-top: 236px;
+  border-radius: 16px;
+}
+.game-list__link--1 {
+  background-image: url(img/first-img.jpg);
+  background-repeat: no-repeat;
+}
+.game-list__link--2 {
+  background-image: url(img/seckond-img.jpg);
+  background-repeat: no-repeat;
+}
+.game-list__link--3 {
+  background-image: url(img/fri-img.jpg);
+  background-repeat: no-repeat;
 }
 
-
-.mid_text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    width: 379px;
-    height: 300px;
-    color: #FFFFFF;
-    padding-left: 32px;
-    padding-top: 109px;
-    border-radius: 16px;
-}
-
-.for__item_1 {
-    background-image: url(img/first-img.jpg);
-    background-repeat: no-repeat;
-}
-
-.for__item_2 {
-    background-image: url(img/seckond-img.jpg);
-    background-repeat: no-repeat;
-}
-
-.for__item_3 {
-    background-image: url(img/fri-img.jpg);
-    background-repeat: no-repeat;
-}
