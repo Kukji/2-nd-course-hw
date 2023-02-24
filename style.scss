@@ -4,8 +4,8 @@
 }
 
 .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: 120px;
+    padding-right: 120px;
 }
 
 body {
@@ -33,8 +33,8 @@ a {
         display: flex;
         align-items: center;
         margin-bottom: 32px;
-        color: #FFFFFF;
-        width: 788.78px;
+        color: #ffffff;
+        width: 750px;
     }
 
     &_offer__description {
@@ -75,8 +75,9 @@ a {
     height: 556px;
     padding-top: 128px;
     padding-left: 120px;
+    list-style-type: none;
 
-    &_text {
+    &__link {
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
@@ -87,20 +88,25 @@ a {
         padding-left: 32px;
         padding-top: 236px;
         border-radius: 16px;
+        display: flex;
+
     }
 
-    &_for__item_1 {
+
+    .game-list__link--1 {
         background-image: url(img/first-img.jpg);
         background-repeat: no-repeat;
     }
 
-    &_for__item_2 {
+    .game-list__link--2 {
         background-image: url(img/seckond-img.jpg);
         background-repeat: no-repeat;
     }
 
-    &_for__item_3 {
+    .game-list__link--3 {
         background-image: url(img/fri-img.jpg);
         background-repeat: no-repeat;
     }
 }
+
+@import 'mobile';

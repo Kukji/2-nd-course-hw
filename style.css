@@ -5,8 +5,8 @@
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 body {
@@ -34,7 +34,8 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 32px;
-  color: #FFFFFF;
+  color: #ffffff;
+  width: 750px;
 }
 .top_offer__description {
   font-style: normal;
@@ -74,7 +75,6 @@ a {
   list-style-type: none;
 }
 .game-list__link {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -85,17 +85,102 @@ a {
   padding-left: 32px;
   padding-top: 236px;
   border-radius: 16px;
+  display: flex;
 }
-.game-list__link--1 {
+.game-list .game-list__link--1 {
   background-image: url(img/first-img.jpg);
   background-repeat: no-repeat;
 }
-.game-list__link--2 {
+.game-list .game-list__link--2 {
   background-image: url(img/seckond-img.jpg);
   background-repeat: no-repeat;
 }
-.game-list__link--3 {
+.game-list .game-list__link--3 {
   background-image: url(img/fri-img.jpg);
   background-repeat: no-repeat;
 }
 
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top_offer__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: 343px;
+  }
+  .top {
+    height: 735px;
+    padding-top: 240px;
+    padding-left: 16px;
+  }
+  .top_offer__description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    width: 343px;
+    color: #FFFFFF;
+  }
+  .top_button {
+    padding-left: 53px;
+  }
+  .game-list {
+    background: #000915;
+    height: 1675px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+  .game-list__item {
+    width: 344px;
+  }
+  .game-list__link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    width: 316px;
+    height: 300px;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-top: 236px;
+    border-radius: 16px;
+    display: flex;
+    gap: 32px;
+  }
+  .game-list_text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    width: 379px;
+    height: 300px;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-top: 236px;
+    border-radius: 16px;
+  }
+  .game-list_for__item_1 {
+    background-image: url(img/first-img.jpg);
+    background-repeat: no-repeat;
+  }
+  .game-list_for__item_2 {
+    background-image: url(img/seckond-img.jpg);
+    background-repeat: no-repeat;
+  }
+  .game-list_for__item_3 {
+    background-image: url(img/fri-img.jpg);
+    background-repeat: no-repeat;
+  }
+}/*# sourceMappingURL=style.css.map */
