@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+  .top_offer__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .top {
+    height: 735px;
+    padding-top: 240px;
+    padding-left: 16px;
+  }
+
+  .top_offer__description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .game-list {
+    background: #000915;
+    gap: 32px;
+    height: 556px;
+    padding-top: 128px;
+    padding-left: 120px;
+  }
+  .game-list_text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    width: 379px;
+    height: 300px;
+    color: #FFFFFF;
+    padding-left: 32px;
+    padding-top: 236px;
+    border-radius: 16px;
+  }
+  .game-list_for__item_1 {
+    background-image: url(img/first-img.jpg);
+    background-repeat: no-repeat;
+  }
+  .game-list_for__item_2 {
+    background-image: url(img/seckond-img.jpg);
+    background-repeat: no-repeat;
+  }
+  .game-list_for__item_3 {
+    background-image: url(img/fri-img.jpg);
+    background-repeat: no-repeat;
+  }
+}/*# sourceMappingURL=_mobile.css.map */
