@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+
+* {
+    box-sizing: border-box;
+}
+
 .center {
     padding-left: 120px;
     padding-right: 120px;
@@ -87,7 +92,7 @@ a {
         color: #FFFFFF;
         padding-left: 32px;
         padding-top: 236px;
-        border-radius: 16px;
+        border-radius: 19px;
         display: flex;
 
     }
