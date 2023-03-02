@@ -114,4 +114,75 @@ a {
     }
 }
 
+.MothGame {
+    background: #000915;
+    display: flex;
+    height: 800px;
+    justify-content: space-between;
+
+    .Moth_top_offer__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-top: 282px;
+    }
+
+    .Moth_top_offer__description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .Moth_img {
+        padding-top: 282px;
+    }
+}
+
+.WordsGame {
+    background: #000915;
+    display: flex;
+    gap: 135px;
+    justify-content: space-between;
+    height: 800px;
+
+    .Words_top_offer__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-top: 282px;
+    }
+
+    .Words_top_offer__description {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .Words_img {
+        padding-top: 282px;
+    }
+}
+
 @import 'mobile';
