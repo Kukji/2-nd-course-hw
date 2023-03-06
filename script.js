@@ -18,100 +18,71 @@ function GameMonth(params) {
         alert('Досвидания!')
     }
 }
+//1
 
-//1 Задание
+//2
+let massiv = [1, 5, 4, 10, 0, 3];
 
-function BigNumbers(a, b) {
-    if (a > b) {
-        return b
-    }
-    else {
-        return a
-    }
-}
+console.log("Позиция четвёрки", massiv.indexOf(4));
 
-console.log(BigNumbers(6, 1))
-
-//2 
-
-function paprity(n) {
-
-    if (n % 2 == 0) {
-        alert('Число чётное')
-    } else {
-        alert('Число нечётное')
-    }
-}
-
-paprity()
-
-//3.1
-
-function sqrt() {
-    let NumFi = Number(prompt('Введите число'))
-    return NumFi ** 2
-}
-
-console.log(NumFi);
-
-
-//3.2
-function sqrt() {
-    let Num = Number(prompt('Введите число'))
-    return Num ** 2
-}
-
-alert(sqrt())
+//3
+let arrone = [1, 3, 5, 10, 20];
+let reuslt = arrone.join(' ');
+console.log(reuslt)
 
 //4
-"use strict";
-let age = prompt("Сколько Вам лет?");
-
-let printMessage;
-if (age < 0) {
-    printMessage = function () {
-        console.log('Вы ввели неправильное значение');;
+let arr = [[1, 1, 1], [1, 1, 1], [1, 1, 1]];
+for (let i = 0; i < 4; i++) {
+    arr[i] = [];
+    for (let j = 0; j <= i; j++) {
+        arr[i][j] = j + 1;
     }
 }
-if (age < 12 && age > 0) {
-
-    printMessage = function () {
-        console.log("Привет, друг!");
-    }
-
-} else if (age >= 13) {
-
-    printMessage = function () {
-        console.log("Добро пожаловать!");
-    }
-
-}
-
-printMessage();
+console.log(arr);
 
 //5
 
-function checkNumber(a, b) {
-    if (!isNaN(a) && !isNaN(b)) {
-        return alert(a * b);
-    } else {
-        console.log("Одно или оба значения не являются числом");
-    }
-}
+let mas = [1, 1, 1];
 
-checkNumber()
+let rez = mas.push('2', '2', '2')
+console.log(rez)
 
 //6
+let six = [9, 8, 7, 'a', 6, 6];
+delete six[3];
+let reza = six.sort()
+console.log(reza)
 
-function UserSqrt() {
-    let n = Number(prompt('Введите число'))
-
-    if (n) {
-        let cube = n ** 3
-        return console.log(`${n} в кубе равняется ${cube}`);
-    } else {
-        return console.log('Переданный параметр не является числом');
-    }
-
+//7
+let UserMassiv = [9, 8, 7, 6, 5];
+let search = UserMassiv.includes(Number(prompt('Введите число от 1 до 10')));
+if (search === true) {
+    console.log('Введенное число содержится в данном массиве');
+} else {
+    console.log('Введенное число не содержится в данном массиве');
 }
-UserSqrt()
+
+
+//8
+
+const array = ['fedcba']
+const reversed = array.reverse()
+console.log(reversed);
+
+//9
+
+const FirstNum = [1, 2, 3]
+const SeckondNum = [4, 5, 6]
+const rezult = [...FirstNum, ...SeckondNum]
+alert(rezult);
+
+//10
+
+const RandomNumber = [6, 5, 8, 7, 9];
+
+let i = 0
+
+while (RandomNumber[i + 1] != undefined) {
+    console.log(RandomNumber[i] + RandomNumber[i + 1]);
+    i++;
+}
