@@ -21,12 +21,12 @@ function GameMonth(params) {
 //1
 
 //2
-let massiv = [1, 5, 4, 10, 0, 3];
+const massiv = [1, 5, 4, 10, 0, 3];
 
 console.log("Позиция четвёрки", massiv.indexOf(4));
 
 //3
-let arrone = [1, 3, 5, 10, 20];
+const arrone = [1, 3, 5, 10, 20];
 let reuslt = arrone.join(' ');
 console.log(reuslt)
 
@@ -42,19 +42,19 @@ console.log(arr);
 
 //5
 
-let mas = [1, 1, 1];
+const mas = [1, 1, 1];
 
 let rez = mas.push('2', '2', '2')
 console.log(rez)
 
 //6
-let six = [9, 8, 7, 'a', 6, 6];
+const six = [9, 8, 7, 'a', 6, 6];
 delete six[3];
 let reza = six.sort()
 console.log(reza)
 
 //7
-let UserMassiv = [9, 8, 7, 6, 5];
+const UserMassiv = [9, 8, 7, 6, 5];
 let search = UserMassiv.includes(Number(prompt('Введите число от 1 до 10')));
 if (search === true) {
     console.log('Введенное число содержится в данном массиве');
@@ -65,9 +65,9 @@ if (search === true) {
 
 //8
 
-const array = ['fedcba']
-const reversed = array.reverse()
-console.log(reversed);
+var str = 'fedcba';
+var strReverse = str.split('').reverse().join('');
+console.log(strReverse)
 
 //9
 
