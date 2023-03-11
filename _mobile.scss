@@ -94,4 +94,74 @@
         background-image: url(img/fri-img.jpg);
         background-repeat: no-repeat;
     }
+
+    .MothGame {
+        display: flex;
+        flex-direction: column;
+
+        .Moth_top_offer__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-left: 38px;
+        }
+
+        .Moth_top_offer__description {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .Moth_img {
+            padding-top: 64px;
+        }
+
+        .Moths__img {
+            width: 344px;
+        }
+    }
+
+    .WordsGame {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .Words_top_offer__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding-left: 38px;
+        }
+
+        .Words_top_offer__description {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .Words_img {
+            padding-top: 58px;
+            margin-bottom: 90px;
+        }
+
+        .Words__img {
+            width: 344px;
+        }
+    }
+
 }
