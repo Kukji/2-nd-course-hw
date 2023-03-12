@@ -53,78 +53,101 @@ function GameStop() {
     }
 }
 
-// //1
-// let str = 'js'
-// console.log(str.toUpperCase())
+//1
+function MyFunc(arr, callback) {
+    return callback(arr)
+}
 
-// //2
-// let resArr = [];
-// function searchStrart(arr, str) {
-//     arr.forEach(element => {
-//         if (element.toLowerCase().startsWith(str.toLowerCase())) {
-//             resArr.push(element)
-//         }
-//     })
-//     console.log(resArr)
-// }
-// searchStrart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
+function mult(arr) {
+    return arr.reduce((acc, cur) => acc * cur, 1);
+
+}
+
+function sum(arr) {
+    return arr.reduce((acc, cur) => acc + cur, 0);
+}
+
+console.log(MyFunc([3, 4, 1, 9], mult))
+console.log(MyFunc([3, 4, 1, 9], sum))
+
+//2
+const users = [
+    { name: 'Jon', age: 22 },
+    { name: 'Richard', age: 18 },
+    { name: 'Anton', age: 32 },
+    { name: 'Lida', age: 23 },
+    { name: 'Bob', age: 44 }
+];
+
+users.sort((prev, next) => next.age - prev.age);
+console.log(users);
+
+//3
+
+const arr = [1, '4', 9, 'two'];
+const arr1 = [1, '4', false, 9, 'two'];
+
+function reversArr(arr) {
+    return arr.reverse();
+}
+
+function stringOrnumber(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] *= 1;
+        if (isNaN(arr[i]) && arr.splice(i, 1));
+    }
+    return arr;
+}
+
+function each(arr, callback) {
+    return callback(arr)
+}
 
 
-// //3
-// let x = Number(32.58884)
-// console.log(Math.floor(x))
-// console.log(Math.ceil(x))
-// console.log(Math.round(x))
 
-// //4
-// var myArray = [52, 53, 49, 77, 21, 32];
-// var min = Math.min(...myArray);
-// max = Math.max(...myArray);
-// console.log(min)
-// console.log(max)
+console.log(each(arr, reversArr))
+console.log(each(arr1, stringOrnumber))
 
+//4
 
-// //5
-// function RandomNumber() {
-//     return Math.round(Math.random() * 10)
-// }
+function sayDate() {
+    console.log(new Date(Date.now()));
+}
 
-// console.log(RandomNumber())
-// //6
-// function getRandomArrNumber(getNumber) {
-//     const GetArr = []
-//     let GetNumberDelTwo
-//         = Math.floor(getNumber / 2)
-//     for (let i = 0; i < GetNumberDelTwo; i++) {
-//         GetArr.push(Math.round(Math.random() * getNumber));
-//     }
-//     console.log(GetArr)
-// }
-// getRandomArrNumber(Number(prompt('Введите любое число')))
+function timer() {
+    const intervalId = setInterval(sayDate, 3000); // id = ???
 
-// //7
-// let seventhRandomValue = (maxValue, minValue) => {
-//     let seventhRandomResult = Math.round(Math.random() * (maxValue - minValue) + minValue);
-//     console.log(seventhRandomResult);
-// }
-// seventhRandomValue(Number(prompt('Введите любое число')), Number(prompt('Введите любое число, значение которого меньше, чем у первого числа')));
-// //8
-// let currentDate = new Date();
-// console.log(currentDate);
+    setTimeout(() => {
+        clearInterval(intervalId);
+        console.log('30 секунд прошло')
+    }, 30000)
+}
 
-// //9
+timer()
 
-// let CurrenDate = new Date("10 March 2023")
-// CurrenDate.setDate(CurrenDate.getDate() + 73);
-// console.log(CurrenDate);
+//5
+function calling() {
+    console.log('Звоню!')
+};
 
-// //10
+function beeps(callback) {
+    setTimeout(() => {
+        console.log('Идут гудки...')
+        callback()
+    }, 1000);
+}
 
-// let dating = new Date();
-// function Data(dating) {
-//     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-//     const moths = ["Января", "Февраля", "Марта", "Ареля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-//     let date = dating.getDate() + ' ' + moths[dating.getMonth()] + ' ' + dating.toTimeString();
-//     console.log(date)
-// }
-// Data(dating)
+function talk() {
+    console.log('Разговор')
+}
+
+function bye(callback) {
+    setTimeout(() => {
+        console.log('Разговор окончен.')
+        callback()
+    }, 2000);
+}
+
+calling();
+beeps(talk);
+bye()
