@@ -20,7 +20,7 @@ function GameMonth(params) {
 }
 
 function GameWords() {
-    let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let arr = ['яблоко', 'груша', 'дыня', 'виноград', 'персик', 'апельсин', 'мандарин'];
     arr = arr.sort(() => Math.random() - 0.5);
     alert(arr)
     let name = String(prompt('Чему равнялся первый элемент массива?'))
@@ -53,78 +53,78 @@ function GameStop() {
     }
 }
 
-//1
-let str = 'js'
-console.log(str.toUpperCase())
+// //1
+// let str = 'js'
+// console.log(str.toUpperCase())
 
-//2
-let resArr = [];
-function searchStrart(arr, str) {
-    arr.forEach(element => {
-        if (element.toLowerCase().startsWith(str.toLowerCase())) {
-            resArr.push(element)
-        }
-    })
-    console.log(resArr)
-}
-searchStrart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
-
-
-//3
-let x = Number(32.58884)
-console.log(Math.floor(x))
-console.log(Math.ceil(x))
-console.log(Math.round(x))
-
-//4
-var myArray = [52, 53, 49, 77, 21, 32];
-var min = Math.min(...myArray);
-max = Math.max(...myArray);
-console.log(min)
-console.log(max)
+// //2
+// let resArr = [];
+// function searchStrart(arr, str) {
+//     arr.forEach(element => {
+//         if (element.toLowerCase().startsWith(str.toLowerCase())) {
+//             resArr.push(element)
+//         }
+//     })
+//     console.log(resArr)
+// }
+// searchStrart(['Кошка', 'Кит', 'Комар', 'Носорог'], 'ко')
 
 
-//5
-function RandomNumber() {
-    return Math.round(Math.random() * 10)
-}
+// //3
+// let x = Number(32.58884)
+// console.log(Math.floor(x))
+// console.log(Math.ceil(x))
+// console.log(Math.round(x))
 
-console.log(RandomNumber())
-//6
-function getRandomArrNumber(getNumber) {
-    const GetArr = []
-    let GetNumberDelTwo
-        = Math.floor(getNumber / 2)
-    for (let i = 0; i < GetNumberDelTwo; i++) {
-        GetArr.push(Math.round(Math.random() * getNumber));
-    }
-    console.log(GetArr)
-}
-getRandomArrNumber(Number(prompt('Введите любое число')))
+// //4
+// var myArray = [52, 53, 49, 77, 21, 32];
+// var min = Math.min(...myArray);
+// max = Math.max(...myArray);
+// console.log(min)
+// console.log(max)
 
-//7
-let seventhRandomValue = (maxValue, minValue) => {
-    let seventhRandomResult = Math.round(Math.random() * (maxValue - minValue) + minValue);
-    console.log(seventhRandomResult);
-}
-seventhRandomValue(Number(prompt('Введите любое число')), Number(prompt('Введите любое число, значение которого меньше, чем у первого числа')));
-//8
-let currentDate = new Date();
-console.log(currentDate);
 
-//9
+// //5
+// function RandomNumber() {
+//     return Math.round(Math.random() * 10)
+// }
 
-let CurrenDate = new Date("10 March 2023")
-CurrenDate.setDate(CurrenDate.getDate() + 73);
-console.log(CurrenDate);
+// console.log(RandomNumber())
+// //6
+// function getRandomArrNumber(getNumber) {
+//     const GetArr = []
+//     let GetNumberDelTwo
+//         = Math.floor(getNumber / 2)
+//     for (let i = 0; i < GetNumberDelTwo; i++) {
+//         GetArr.push(Math.round(Math.random() * getNumber));
+//     }
+//     console.log(GetArr)
+// }
+// getRandomArrNumber(Number(prompt('Введите любое число')))
 
-//10
+// //7
+// let seventhRandomValue = (maxValue, minValue) => {
+//     let seventhRandomResult = Math.round(Math.random() * (maxValue - minValue) + minValue);
+//     console.log(seventhRandomResult);
+// }
+// seventhRandomValue(Number(prompt('Введите любое число')), Number(prompt('Введите любое число, значение которого меньше, чем у первого числа')));
+// //8
+// let currentDate = new Date();
+// console.log(currentDate);
 
-let dating = new Date();
-function Data(dating) {
-    const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
-    const moths = ["Января", "Февраля", "Марта", "Ареля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
-    let date = dating.getDate() + ' ' + moths[dating.getMonth()] + ' ' + dating.toTimeString();
-    console.log(date)
-}
-Data(dating)
+// //9
+
+// let CurrenDate = new Date("10 March 2023")
+// CurrenDate.setDate(CurrenDate.getDate() + 73);
+// console.log(CurrenDate);
+
+// //10
+
+// let dating = new Date();
+// function Data(dating) {
+//     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+//     const moths = ["Января", "Февраля", "Марта", "Ареля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+//     let date = dating.getDate() + ' ' + moths[dating.getMonth()] + ' ' + dating.toTimeString();
+//     console.log(date)
+// }
+// Data(dating)
